@@ -1,0 +1,17 @@
+<div class="container">
+<div bgcolor="#E6E6FA">
+<h1>Search for Companies</h1>
+     <input type="text" [(ngModel)]="SearchTxt"   placeholder="Search here" name="searchTerm"/>
+     <button type="submit" (click)="searchResult()">Submit</button>
+     <br><br>
+     <ul>
+       <li *ngFor="let company of companiesList">
+         <a (click)="navToCompanyDetails(company)">
+           {{company.title}}
+         </a>
+       </li>
+
+         
+     </ul>
+</div>
+</div>

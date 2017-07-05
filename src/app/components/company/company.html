@@ -1,0 +1,30 @@
+<div class="container" *ngIf="companiesDetails">
+    <h1>{{ companiesDetails.company_name}} Details</h1>
+    <div class="container">
+
+        <p></p>
+        <table class="table table-bordered" >
+            <thead>
+                <tr>
+                    <th>Company Number</th>
+                    <th>Company Name</th>
+                    <th>Address</th>
+                     <th>DOC</th>
+                     <th>Jurisdiction</th>
+                     <th>Status</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ companiesDetails.company_number}}</td>
+                    <td>{{ companiesDetails.company_name}}</td>
+                    <td>{{ companiesDetails.address}}</td>
+                    <td>{{ companiesDetails.date_of_creation}}</td>
+                    <td>{{ companiesDetails.jurisdiction}}</td>
+                    <td>{{ companiesDetails.company_status}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
